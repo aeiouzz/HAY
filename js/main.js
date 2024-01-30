@@ -397,21 +397,18 @@ function canvas() {
     end: "500% top",
   })
 }
-
 canvas();
-
-
 
 
 // 📍 section2
 $(document).ready(function () {
   $('.sec2_imgslide').slick({
     arrows: false,
-    autoplay:true,
-    autoplaySpeed:2000,
-    dots:true,
-    fade:true,
-    infinite:true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    fade: true,
+    infinite: true,
   });
 });
 
@@ -693,7 +690,7 @@ gsap.timeline({
 
 
 
-  // 📍 section9
+// 📍 section9
 let slider = document.querySelector('.sec9_slider');
 let slideWrapper = document.querySelector('.sec9_slider');
 let slides = document.querySelectorAll('.sec9_slide');

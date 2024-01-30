@@ -19,12 +19,6 @@
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-}
-
-
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Kanit', sans-serif; */
 /* color: #ff5538, #3ad2d0 */
@@ -141,7 +135,18 @@ header {
   text-transform: uppercase;
   font-size: 60px;
   font-weight: 500;
+  transition: 0.3s;
+  display: block;
 }
+
+.primary-menu a:hover {
+  color: #ff5538;
+  transform: scale(0.9);
+  transform-origin: 0% 0%;
+}
+
+
+
 
 .secondary-menu {
   margin-top: 100px;
@@ -150,6 +155,13 @@ header {
 .secondary-menu .menu-item a {
   font-size: 36px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 45px;
+  transition: 0.3s;
+}
+
+.secondary-menu .menu-item a:hover {
+  color: #ff5538;
 }
 
 
@@ -180,7 +192,6 @@ header {
 
 .section0_tit {
   color: #fff;
-
 }
 
 .btn_scroll {
@@ -393,11 +404,15 @@ header {
 }
 
 .section2_button {
+  border: 2px dashed #ff5538;
+  padding: 13px 35px;
+  border-radius: 50%;
   position: absolute;
-  top: 35px;
+  top: 30px;
   right: 40px;
   display: flex;
   gap: 30px;
+  background-color: #fff;
 }
 
 .section2_button img {
@@ -456,7 +471,7 @@ header {
 .section2 .sec2_cont {
   display: flex;
   width: 100%;
-  height: 85%;
+  height: 86%;
 }
 
 
@@ -532,7 +547,7 @@ header {
 
 /* 📍 section3 */
 .section3_wrap {
-  width: 100vw;
+  width: 100%;
 }
 
 .section3 {
@@ -632,7 +647,7 @@ header {
 .section3 .title h2 {
   font-size: 3rem;
   letter-spacing: 0.5rem;
-  font-weight: 100;
+  font-weight: 500;
   padding-bottom: 20px;
 }
 
@@ -737,7 +752,7 @@ header {
 /* 📍 section4 */
 .section4 {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 30vh;
   background-color: #fff;
   z-index: 0;
@@ -778,6 +793,7 @@ header {
 
 /* 📍 section5 */
 .section5 {
+  width: 100%;
   margin-top: 15vw;
 }
 
@@ -879,7 +895,7 @@ header {
 
 /* 📍 section7 */
 .section7_container {
-  width: 100vw;
+  width: 100%;
   position: sticky;
   box-sizing: border-box;
 }
@@ -1128,7 +1144,7 @@ to {
 
 /* 📍 section8 */
 .section8 {
-  width: 100vw;
+  width: 100%;
 }
 
 .container {
@@ -1154,7 +1170,7 @@ to {
 
 /* 📍 section9 */
 .section9 {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   /* overflow: hidden; */
 }
@@ -1273,8 +1289,13 @@ to {
 
 /* 📍 footer */
 .footer_wrap {
+  width: 100%;
+    /* height: 100vh; */
   --text-color: #000;
   position: relative;
+  background-color: #fff;
+  color: #fff;
+  padding-bottom: 10vh;
 }
 
 .footer {
@@ -1284,14 +1305,6 @@ to {
   transition: color 0.5s ease;
 }
 
-.footer_wrap {
-  width: 100vw;
-  /* height: 100vh; */
-  position: relative;
-  background-color: #fff;
-  color: #fff;
-  padding-bottom: 10vh;
-}
 
 .footer-inner {
   position: relative;
