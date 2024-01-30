@@ -413,7 +413,6 @@ $(document).ready(function () {
 });
 
 
-
 // 📍 section3
 $(document).ready(function () {
 
@@ -456,7 +455,7 @@ $(document).ready(function () {
 });
 
 
-$(function () {
+/* $(function () {
   $('a[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -469,54 +468,7 @@ $(function () {
       }
     }
   });
-});
-
-
-
-// 📍 section4
-/* let pTag1 = document.querySelector('.first-parallel');
-
-let imageArr1 = [
-  './img/bed4.jpg',
-  './img/bed1.jpg',
-  './img/bed2.jpg',
-  './img/bed3.jpg',
-  './img/bed6.jpg',
-  './img/bed5.jpg',
-]
-
-let count1 = 0;
-
-initImages(pTag1, imageArr1);
-
-function initImages(element, imageArr) {
-  imageArr.push(...imageArr)
-  imageArr.push(...imageArr)
-  for (let i = 0; i < imageArr.length; i++) {
-    const img = document.createElement('img');
-    img.src = imageArr[i];
-    img.alt = `Image ${i + 1}`;
-    element.appendChild(img);
-  }
-}
-
-
-function animate() {
-  count1 = marqueeImage(count1, pTag1, -1);
-  count1++;
-  window.requestAnimationFrame(animate);
-}
-
-function marqueeImage(count, element, direction) {
-  if (count > element.scrollWidth / 2) {
-    count = 0;
-    element.style.transform = `translate(0,0)`;
-  }
-  element.style.transform = `translate(${count * direction}px,0)`;
-  return count;
-}
- */
-// animate();
+}); */
 
 
 
@@ -528,12 +480,13 @@ const horiz1 = gsap.to(horSection, {
   xPercent: -90 * (horSection.lenth - 1),
   scrollTrigger: {
     trigger: '.port_desc',
-    start: 'top 20%',
+    start: 'top 21%',
     end: '+=4000',
-    scrub: 5,
+    scrub: 3,
     pin: true,
   }
 })
+
 
 
 // 📍 section7
@@ -625,8 +578,6 @@ function slideShows() {
 }
 
 slideShows();
-
-
 
 
 

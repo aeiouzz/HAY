@@ -58,7 +58,7 @@ header {
   position: absolute;
   overflow: hidden;
   color: #fff;
-  z-index: 5;
+  z-index: 99;
   transform: translateY(-100%);
   transition: transform 0.5s ease;
   display: flex;
@@ -825,14 +825,9 @@ header {
   font-size: 30px;
 }
 
-/* .port_wrap .port_title .wiggle-it:hover {
-  color: #ff5538;
-  background-color: #000;
-} */
-
 .port_desc {
   display: flex;
-  margin-top: 100px;
+  margin-top: 110px;
   width: 700%;
   gap: 60px;
   background-color: #fff;
@@ -861,6 +856,13 @@ header {
 }
 
 .section5 .port_wrap .port_desc .port video {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.section5 .port_wrap .port_desc .port img {
   width: 100%;
   height: 350px;
   object-fit: cover;
@@ -1322,14 +1324,14 @@ to {
   font-weight: 100;
   font-size: 2.4vw;
   position: relative;
-  z-index: 9999;
+  z-index: 9;
 }
 
 .footer-inner>h2 {
   font-size: 3vw;
   font-weight: 100;
   position: relative;
-  z-index: 9999;
+  z-index: 9;
 }
 
 .center15 {
