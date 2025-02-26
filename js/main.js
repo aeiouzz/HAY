@@ -89,7 +89,7 @@ gsap.to('.menu_container', {
   backgroundColor: '#ff5538',
   ease: 'none',
   scrollTrigger: {
-    trigger: '.section2',
+    trigger: '.section5',
     start: 'top 10%',
     end: '+=100',
     scrub: true,
@@ -400,78 +400,6 @@ function canvas() {
 canvas();
 
 
-// 📍 section2
-$(document).ready(function () {
-  $('.sec2_imgslide').slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: true,
-    fade: true,
-    infinite: true,
-  });
-});
-
-
-// 📍 section3
-$(document).ready(function () {
-
-  var $sm = 480;
-  var $md = 768;
-
-  function resizeThis() {
-    $imgH = $('.middle img').width();
-    if ($(window).width() >= $sm) {
-      $('.left,.right,.section3').css('height', $imgH);
-    } else {
-      $('.left,.right,.section3').css('height', 'auto');
-    }
-  }
-
-  resizeThis();
-
-  $(window).resize(function () {
-    resizeThis();
-  });
-
-
-  $(window).scroll(function () {
-    $('.section3').each(function () {
-      var $elementPos = $(this).offset().top;
-      var $scrollPos = $(window).scrollTop();
-
-      var $sectionH = $(this).height();
-      var $h = $(window).height();
-      var $sectionVert = (($h / 2) - ($sectionH / 4));
-
-
-      if (($elementPos - $sectionVert) <= $scrollPos && ($elementPos - $sectionVert) + $sectionH > $scrollPos) {
-        $(this).addClass('animate');
-      } else {
-        $(this).removeClass('animate');
-      }
-    });
-  });
-});
-
-
-/* $(function () {
-  $('a[href*="#"]:not([href="#"])').click(function () {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-}); */
-
-
-
 // 📍 section5
 const horSection = gsap.utils.toArray('.port_desc .port');
 
@@ -480,13 +408,12 @@ const horiz1 = gsap.to(horSection, {
   xPercent: -90 * (horSection.lenth - 1),
   scrollTrigger: {
     trigger: '.port_desc',
-    start: 'top 21%',
-    end: '+=4000',
+    start: 'top 14%',
+    end: '+=3500',
     scrub: 3,
     pin: true,
   }
 })
-
 
 
 // 📍 section7
@@ -499,7 +426,7 @@ var tl7 = gsap.timeline({
     pin: ".section7",
     scrub: 2,
     start: "top top",
-    end: "+=1300",
+    end: "+=800",
   }
 }).to(list, {
   yPercent: -50,
@@ -588,7 +515,7 @@ gsap.to('.page', {
   ease: 'none',
   scrollTrigger: {
     trigger: '.page',
-    start: 'top 70%',
+    start: 'top 90%',
     endTrigger: '.page', // 필요에 따라 끝 트리거 요소 조정
     end: 'bottom top', // 필요에 따라 끝 위치 조정
     scrub: 3
@@ -618,16 +545,16 @@ let snap = gsap.utils.snap(10);
 gsap.timeline({
     scrollTrigger: {
       trigger: ".video-wrapper",
-      start: "center center",
-      end: "+=1000",
+      start: "end end",
+      end: "+=1700",
       pin: true,
       scrub: true
     }
   })
   .fromTo(inset, {
-    x: 30,
-    y: 15,
-    r: 100,
+    x: 50,
+    y: 40,
+    r: 150,
   }, {
     duration: 1,
     x: 0,
