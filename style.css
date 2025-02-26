@@ -19,13 +19,6 @@
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
 }
 
-/* font-family: 'Montserrat', sans-serif; */
-/* font-family: 'Kanit', sans-serif; */
-/* color: #ff5538, #3ad2d0 */
-/* body {
-  -ms-overflow-style: none;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -64,7 +57,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 0 50px 50px 50px;
-  background-color: #86c4ff;
+  background-color: #F1E3D3;
 }
 
 .logo,
@@ -245,7 +238,6 @@ header {
   position: relative;
   width: 100%;
   height: 500vh;
-  background-color: #ff563813;
 }
 
 .section1 h2 {
@@ -253,7 +245,7 @@ header {
   margin-top: 50px;
   text-align: center;
   position: sticky;
-  top: 57%;
+  top: 52%;
   transform: translateY(-57%);
   font-size: 4.6rem;
   color: #dadada53;
@@ -794,56 +786,31 @@ header {
 /* 📍 section5 */
 .section5 {
   width: 100%;
-  margin-top: 15vw;
 }
 
 .port_wrap {
   position: relative;
 }
 
-.port_wrap .port_title {
-  position: sticky;
-  top: 100px;
-  padding-left: 30px;
-  width: 100%;
-  height: 3.5vw;
-  font-size: 3vw;
-  line-height: 1;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #2b2b2b;
-  border-bottom: 1px solid #5f5953;
-  padding-bottom: 10px;
-  margin-top: 7vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.port_wrap .port_title p {
-  padding-right: 20px;
-  font-size: 30px;
-}
-
 .port_desc {
   display: flex;
-  margin-top: 110px;
+  margin-top: 50px;
   width: 700%;
   gap: 60px;
   background-color: #fff;
 }
 
 .port_desc .port {
-  width: 500px;
-  height: 700px;
+  width: 400px;
+  height: 600px;
   background-color: #d9c8be;
-  padding: 35px;
+  padding: 30px;
   border-radius: 30px;
 }
 
 .section5 .port_wrap .port_desc .port span {
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   padding-bottom: 10px;
   margin-left: 10px;
   display: inline-block;
@@ -851,20 +818,20 @@ header {
 
 .section5 .port_wrap .port_desc .port .video {
   width: 100%;
-  height: 350px;
+  height: 330px;
   display: block;
 }
 
 .section5 .port_wrap .port_desc .port video {
   width: 100%;
-  height: 350px;
+  height: 330px;
   object-fit: cover;
   border-radius: 30px;
 }
 
 .section5 .port_wrap .port_desc .port img {
   width: 100%;
-  height: 350px;
+  height: 330px;
   object-fit: cover;
   border-radius: 30px;
 }
@@ -887,7 +854,7 @@ header {
 
 .port_desc .port p {
   font-family: 'Pretendard-Regular';
-  font-size: 20px;
+  font-size: 18px;
   color: #2b2b2b;
   padding-top: 20px;
   line-height: 1.4;
@@ -1155,7 +1122,7 @@ to {
 
 .video-wrapper {
   position: relative;
-  padding-top: 56.25%;
+  padding-top: 60.25%;
   z-index: 200;
 }
 
@@ -1205,9 +1172,9 @@ to {
 #sec9_header {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   line-height: 85%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .sec9_slider {
@@ -1288,32 +1255,30 @@ to {
 }
 
 
-
 /* 📍 footer */
 .footer_wrap {
   width: 100%;
-    /* height: 100vh; */
+  /* height: 100vh; */
   --text-color: #000;
   position: relative;
   background-color: #fff;
   color: #fff;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
 }
 
 .footer {
   width: 100%;
-  padding-top: 200px;
+  padding-top: 150px;
   color: var(--text-color);
   transition: color 0.5s ease;
 }
-
 
 .footer-inner {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0vw 5vw;
+  padding: 10px;
   height: 33.3%;
   width: 100%;
   border-top: 0.5px solid #ffffff5c;
@@ -1332,6 +1297,7 @@ to {
   font-weight: 100;
   position: relative;
   z-index: 9;
+  transition: 0.5s;
 }
 
 .center15 {
@@ -1339,7 +1305,7 @@ to {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #3ad2d0;
+  background-color: #F1E3D3;
   width: 100%;
   height: 0%;
   transition: 0.5s;
@@ -1347,6 +1313,10 @@ to {
 
 .footer-inner:hover .center15 {
   height: 100%;
+}
+
+.footer-inner:hover h2{
+  color: #000;
 }
 
 .footertop {
@@ -1357,8 +1327,10 @@ to {
 }
 
 .footer_tit {
-  font-size: 40px;
+  font-size: 30px;
+  line-height: 45px;
   width: 50%;
+  padding-top: 20px;
 }
 
 .bounce-it {
